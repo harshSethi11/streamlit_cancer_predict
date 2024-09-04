@@ -1,0 +1,2 @@
+# in command line, if we use a conda environment , we have to install all the packages or frameworks or libraries using conda only not pip
+# to call a jupyter notebook from cmd, write jupyter notebook, to clear the screen write cls,to exit out of python interpreter write exit(), to stop the hosting of jupyter notebook on local host, do ctrl +c
