@@ -45,7 +45,7 @@ def get_scaled_value(input_data):
     return scaled_dict
 
 def getCleanData():
-    df = pd.read_csv(r".\cancer_detection\cancer.csv") # should be in the same directory as the file
+    df = pd.read_csv(r"cancer_detection/cancer.csv") # should be in the same directory as the file
     df = df.drop(["Unnamed: 32","id"],axis =1) # axis = 1 means column, axis = 0 means row
     df["diagnosis"] = df["diagnosis"].map({"M":1,"B":0}) #encoding M and B to 1's and 0's to convert it into numbers
 
