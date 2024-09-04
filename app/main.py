@@ -162,7 +162,7 @@ def main():
 
     )
     
-    with open(r"assets\style.css") as f:
+    with open(r"assets/style.css") as f:
         st.markdown("<style>{}</style>".format(f.read()),unsafe_allow_html= True)
 
     #adding sidebar using function
