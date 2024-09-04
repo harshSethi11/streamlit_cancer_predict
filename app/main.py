@@ -5,8 +5,8 @@ import plotly.graph_objects as go
 import numpy as np
 
 def add_predictions(input_data):
-    model = pickle.load(open(r"cancer_detection\model.pkl","rb"))
-    scaler = pickle.load(open(r"cancer_detection\scaler.pkl","rb"))
+    model = pickle.load(open(r"cancer_detection/model.pkl","rb"))
+    scaler = pickle.load(open(r"cancer_detection/scaler.pkl","rb"))
     #input_data is in the form of dictionary with key value pairs, we have to convert it in a single array, for this we use numpy
     input_array = np.array(list(input_data.values())).reshape(1,-1)  # our model is supposed to take 2d arrays instead of 1d
     
